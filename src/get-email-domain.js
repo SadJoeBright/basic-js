@@ -16,3 +16,6 @@ function getEmailDomain(email) {
 module.exports = {
   getEmailDomain
 };
+
+let domain = 'prettyandsimple@example.com';
+console.log(domain.slice(domain.indexOf('@') + 1))

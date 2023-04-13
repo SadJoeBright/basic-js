@@ -27,6 +27,17 @@ function getDNSStats(/* domains */) {
   // remove line with error and write your code here
 }
 
+let domains = [
+ 'code.yandex.ru',
+ 'music.yandex.ru',
+ 'yandex.ru'
+];
+let result = {};
+
+domains = domains.map(e => e.split('.').reverse());
+
+console.log(domains)
+
 module.exports = {
   getDNSStats
 };
